@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  // ตัวแปรสำหรับทดสอบ
+  let a = 10;
+  let b = 20;
+  let x = [1, 2, 3];
+  let y = [1, 2, 3];
+  let z = "hello";
+
+  // การเปรียบเทียบ (Comparison Operators)
+  console.log("==:", a == b);      // false
+  console.log("!=:", a != b);      // true
+  console.log("> :", a > b);       // false
+  console.log("< :", a < b);       // true
+  console.log(">=:", a >= b);      // false
+  console.log("<=:", a <= b);      // true
+
+  // ตัวดำเนินการทางตรรกะ (Logical Operators)
+  console.log("and:", a < b && b > 15);  // true
+  console.log("or :", a > b || b > 15);  // true
+  console.log("not:", !(a > b));         // true
+
+  // ตัวดำเนินการสมาชิก (Membership Operators)
+  console.log("in     :", x.includes(2));         // true
+  console.log("not in :", !x.includes(4));        // true
+
+  // ตัวดำเนินการอ้างอิง (Identity Operators)
+  console.log("is     :", x === y);              // false
+  console.log("is not :", x !== y);              // true
+
+  // การเปรียบเทียบสตริง
+  console.log("String == :", z === "hello");     // true
+  console.log("String != :", z !== "world");    // true
+</script>
+
+</body>
+</html>

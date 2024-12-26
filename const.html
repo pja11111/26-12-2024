@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+const numbers = {a:1 , b: 2, c: 3};  // ใช้ ObjectแทนSet
+
+const keys = Object.keys(numbers);  // ดึงคีย์จาก Object
+
+for (let i = 0; i < keys.length; i++) {  // ใช้ for loop
+  const key = keys[i];  // คีย์ที่ได้จาก Object
+  const doubled = numbers[key] + 1;  // เข้าถึงค่าผ่านคีย์
+  console.log(doubled);
+}
+</script>
+
+</body>  
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<h1>ddsfcsd</h1>
+<body>
+
+<script>
+const numbers = {a: 1, b: 2, c: 3};  // ใช้ Object แทน Set
+
+for (const key in numbers) {  // ใช้ for...in แทนการดึงคีย์
+  const doubled = numbers[key] + 1;  // เข้าถึงค่าผ่านคีย์
+  console.log(doubled);
+}
+</script>
+
+</body>  
+</html> -->
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  
+const numbers = [1, 2, 3];  // ใช้ Array
+for (let i = 0; i < numbers.length; i++) {  // ใช้ for loop
+  const doubled = numbers[i] * 2;  // คูณค่าของอาร์เรย์แต่ละตัว
+  console.log(doubled);
+}
+</script>
+
+</body>  
+</html> -->
+
+

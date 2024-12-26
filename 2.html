@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  
+  const a = [5];  // Array, const เปลี่ยนไม่ได้
+  a.push(10);
+
+  console.log(a)
+const b = 5;
+   // Primitive, const (cannot be changed)
+
+let c = 5;      // Primitive, let (can be changed)
+
+function ab() {
+  
+  if (Array.isArray(a)) {
+    console.log('a สามารถเปลี่ยนค่าใน array ได้ แต่ไม่สามารถเปลี่ยนตัวแปร a');
+  }
+
+
+  if (b === 5) {
+    console.log('b ไม่สามารถเปลี่ยนค่าได้');
+  }
+
+
+  c = 10;  
+  console.log(`c เปลี่ยนค่าเป็น: ${c}`); 
+}
+
+
+ab();
+
+</script>
+
+</body>  
+</html>

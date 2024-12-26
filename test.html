@@ -1,0 +1,44 @@
+<!-- <!DOCTYPE html สุ่มเลข 999 ใน1000 รอบ>
+<html>
+<body>
+
+<script>
+  
+  for (let i = 0; i < 1000; i++) {
+    const randomNumber = Math.floor(Math.random() * 1000); 
+    const formattedNumber = String(randomNumber).padStart(3, "0"); // แปลงเป็นเลข 3 หลัก
+    console.log(`รอบที่ ${i + 1}: ${formattedNumber}`); 
+    
+    if (randomNumber === 999) {
+      console.log("สุ่มได้แล้ว หยุดการทำงาน");
+      break; 
+    }
+  }
+</script>
+
+</body>  
+</html> -->
+
+
+
+
+ <!DOCTYPE html>
+<html>
+<body>
+
+    <script>// สุ่มจนเจอ 000
+let count = 0;
+let randomNumber;
+
+while (randomNumber !== 999) {
+  randomNumber = Math.floor(Math.random() * 1000); // สุ่มเลข 0 ถึง 999
+  const formattedNumber = String(randomNumber).padStart(3, "0"); // แปลงเป็นเลข 3 หลัก
+  console.log(`รอบที่ ${count + 1}: ${formattedNumber}`);
+  count++;
+}
+
+console.log(`พบเลข ในรอบที่ ${count}`);
+      </script>
+
+</body>  
+</html>
